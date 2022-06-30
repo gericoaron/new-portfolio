@@ -1,0 +1,535 @@
+@font-face {
+    font-family: FreeSansBold;
+    src: url(font/FreeSansBold.ttf);
+  }
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    outline-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F4C600;
+}
+.heading{
+    z-index: 10;
+    position: fixed;
+    display: flex;
+  
+}
+
+.logo{
+    padding: 0.5rem;
+    background-color: #143d59;
+    width: 85rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo li{
+    display: inline;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0em 1em;
+   
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    display: inline;
+    
+    
+}
+.logo ul{
+    margin-top: 0.5em;
+}
+.com{
+    font-size: 1.5rem;
+    color: #F4C600;
+    font-weight: 700;
+}
+
+/* hero */
+
+.hero{
+    height: 100vh;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.title{
+    float: right;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.buttonhero{
+    float: right;
+    font-size: 0.8em;
+    padding: 1em;
+    border: none;
+    border-radius: 50vmax;
+    margin: 0.8em;
+    width: 10em;
+    background:  #143d59;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonhero:hover{
+    transform: scale(1.2);
+    color: #000;
+    background: #FFF;
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+}
+.title h1{
+    text-align: left;
+    font-size: 4.5em;
+    line-height: 0.8em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    
+        text-transform: uppercase;
+       background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+       );
+       background-size: auto auto;
+       background-clip: border-box;
+       background-size: 200% auto;
+       color: #fff;
+       background-clip: text;
+       text-fill-color: transparent;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: textclip 2s linear infinite;
+       display: inline-block;
+         
+     }
+     
+     @keyframes textclip {
+       to {
+         background-position: 200% center;
+       }
+     
+}
+
+.imagetitle img{
+    height: 100vh;
+    width: auto;
+
+}
+/* projects */
+#projects-way{
+    height: 100vh;
+    background-image: url('bg2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title-project{
+    float: left;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.title-project h1{
+    text-align: left;
+    font-size: 3em;
+    line-height: 0.9em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* project list */
+#project-list{
+    height: 100vh;
+    background-image: url('bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title-project-list{
+    float: right;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.title-project-list h1{
+    text-align: left;
+    font-size: 3em;
+    line-height: 1em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+/* card */
+.row {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 1vmax;
+  }
+  
+  .column img:hover{
+    transform: scale(1.1);
+    background: #FFF;
+    color: #000;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+  }
+.cards h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 1em;
+}
+/* contact */
+#contact{
+    height: 100vh;
+}
+/* media */
+
+@media(max-width: 1280px){
+
+    .title{
+        float: right;
+        width: 60%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color:  #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3.8em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+      /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 961px){
+    .title{
+        float: right;
+        width: 60%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color:  #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3.4em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 941px){
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color:  #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 929px){
+    .logo{
+        padding: 0.8rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 1rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 1rem;
+        color:  #143d59;
+        font-weight: 700;
+    }
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 6em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.6em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color:  #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 2em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 774px){
+    .logo{
+        padding: 0.8rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 0.8rem;
+        color:  #143d59;
+        font-weight: 700;
+    }
+    .title{
+        float: right;
+        width: 65%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 5em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.5em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color:  #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 1.7em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 621px){
+
+    .logo{
+        padding: 0.6rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 0.6rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 0.6rem;
+        color:  #143d59;
+        font-weight: 700;
+    }
+
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 4em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.4em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 1em;
+        width: 8em;
+        background-color: #143d59;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
